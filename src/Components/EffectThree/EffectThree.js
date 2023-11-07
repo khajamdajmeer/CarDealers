@@ -17,36 +17,37 @@ const ScrollContainerref = useRef(null)
     const [contentready,setContentReady]=useState(false);
 
     useEffect(() => {
-gsap.registerPlugin(ScrollTrigger)
-
-        const ScrollItem = ScrollItemref.current;
-        const ScrollContainer = ScrollContainerref.current;
-        const scrollitemwidth = ScrollItem.offsetWidth;
-        const scrollcontainerwidth = ScrollContainer.offsetWidth;
-console.log(scrollitemwidth,scrollcontainerwidth)
-    
-        const t1 = gsap.timeline({
-          scrollTrigger: {
-            trigger: ScrollContainer,
-            start: 'top top',
-            end: `+=${scrollitemwidth}`,
-            scrub: 1,
-            pin: true,markers:true
-          },
-        });
-    
-        t1.to(ScrollItem, {
-          x: `-${scrollitemwidth-200}`,
-          ease: 'none',
-        });
-    
-        ScrollTrigger.refresh();
-    
-        return () => {
-          t1.kill();
-        };
-      }, [contentready]);
-
+        gsap.registerPlugin(ScrollTrigger)
+        
+                const ScrollItem = ScrollItemref.current;
+                const ScrollContainer = ScrollContainerref.current;
+                const scrollitemwidth = ScrollItem.offsetWidth;
+                const scrollcontainerwidth = ScrollContainer.offsetWidth;
+        console.log(scrollitemwidth,scrollcontainerwidth)
+            
+                const t1 = gsap.timeline({
+                  scrollTrigger: {
+                    trigger: ScrollContainer,
+                    start: 'top top',
+                    end: `+=${scrollitemwidth}`,
+                    scrub: 1,
+                    pin: true,markers:true,pinSpacing:true
+                  },
+                });
+            
+                t1.to(ScrollItem, {
+                  x: `-${scrollitemwidth-200}`,
+                  ease: 'none',
+                });
+            
+                ScrollTrigger.refresh();
+            
+                return () => {
+                  t1.kill();
+                };
+              }
+        
+   ,[contentready] )
       useEffect(()=>{
         setTimeout(()=>{setContentReady(true)},3000);
       },[])
