@@ -29,15 +29,15 @@ gsap.registerPlugin(ScrollTrigger)
           scrollTrigger: {
             trigger: ScrollContainer,
             start: 'top top',
-            end: `200+=${scrollcontainerwidth}`,
+            end: `+=${scrollcontainerwidth-30}`,
             scrub: 1,
-            pin: true,
+            pin: true
           },
         });
     
         t1.to(ScrollItem, {
           x: `-${scrollitemwidth }`,
-          ease: 'none',
+          ease: 'none'
         });
     
         ScrollTrigger.refresh();
@@ -52,8 +52,9 @@ gsap.registerPlugin(ScrollTrigger)
 
     <div className="Effect-3-container" ref={ScrollContainerref}>
         <div className="Effect-3item">
-            <h2>Het hele pakket.</h2>
-            <p>Bij ons autobedrijf geen gedoe met pakketten of extra kosten. Onze prijzen zijn all-in, dus je koopt een auto en kunt direct de weg op. Eenvoudig, transparant en zonder verrassingen!</p>
+            <h2>
+The whole package.</h2>
+            <p>With our car company, no hassle with packages or extra costs. Our prices are all-inclusive, so you buy a car and can hit the road straight away. Simple, transparent and without surprises!</p>
         </div>
         <div className="effect3-scroll-container" >
             <div className="effect3-img-item" ref={ScrollItemref}>

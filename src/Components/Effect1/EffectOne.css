@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden; /* Hide horizontal overflow */
+    position: relative;
+  }
+  
+  .images {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%; /* Make the images container take the full width of the viewport */
+  }
+  
+  .images img {
+    height: 30% !important;
+    width: auto; /* Initial height of images */
+    object-fit: cover; /* Adjust how the images fill their containers */
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+  }
+  

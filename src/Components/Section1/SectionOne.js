@@ -14,7 +14,7 @@ const SectionOne = () => {
         const VerticalScrool = VerticalScrollref.current;
 
         const effect = gsap.to(VerticalScrool,{
-            y:'-250%',
+            y:-2500,duration:4,
             ease:'none'
         })
 
@@ -36,12 +36,6 @@ ScrollTrigger.create({
     animation:effect,
     scrub:1
 })
-// ScrollTrigger.create({
-//     trigger:'.section-one-item',
-//     start:'top top',
-//     scrub:1,
-//     pin:'.section-one-container',
-// })
 
 
       
@@ -58,10 +52,10 @@ ScrollTrigger.create({
                 </div>
                 <div className="section-one-item2">
                     <div className="section-item2-container">
-                        <button>Auto Kopen</button>
-                        <button>Auto verkopen</button>
+                        <button>Buy Car</button>
+                        <button>sell Car </button>
                     </div>
-                    <div className='verticalscrollonimg' ref={VerticalScrollref} ><h2 id='scrolltext'>beuke beuke beuke beuke</h2></div>
+                    <div className='verticalscrollonimg' ref={VerticalScrollref} ><h2 id='scrolltext'> Bludgers Bludgers Bludgers Bludgers</h2></div>
 
                 </div>
 

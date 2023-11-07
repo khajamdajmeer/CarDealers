@@ -17,7 +17,7 @@ const Header = () => {
                 <div className="navlogo"><img src={logo} alt="" /></div>
                 <div className="nav-item">
                     <ul className="nav">
-                        <li>Collectie</li>
+                        <li>Collection</li>
                         <li>Classics</li>
                         <li>Contact</li>
                     </ul>
@@ -26,13 +26,13 @@ const Header = () => {
 
             <div className="nav-content">
               <div className="content-left">
-                <h2>Beukers <br />Automotive</h2>
+                <h2>Bludgers <br />Automotive</h2>
                 <div className="header-buttons">
                   <button >Contact</button>
-                  <button className='collect-btn'>Collectie</button>
+                  <button className='collect-btn'>Collection</button>
                 </div>
               </div>
-              <div className="content-right">Car Beukers</div>
+              <div className="content-right">Car Dealers</div>
             </div>
         </div>
 
@@ -40,8 +40,9 @@ const Header = () => {
 
      <div className="header-info">
       <div className="header-info-container">
-        <div className="info-left">Beuk de weg op Beukers' bolides!</div>
-        <div className="info-right">van klassiekers tot moderme parels, onze collectie aan unieke en bijzondere auto's staat klaar om ontdekt te worden. Neem een kijkje en vind de wagen die juow hart sneller laat kloppen</div>
+        <div className="info-left">Hit the road on Beukers' cars!</div>
+        <div className="info-right">
+        from classics to modern gems, our collection of unique and special cars is ready to be discovered. Take a look and find the car that makes your heart beat faster</div>
         </div>
      </div>
     </>

@@ -44,3 +44,32 @@ transition: all 0.4s ease;
 .section-item2-container button:hover{
     background-color: #9d832c;
 }
+@media (max-width:568px) {
+    .verticalscrollonimg h2 {
+        font-size: 55px;
+        -webkit-text-stroke-width: 0.6px;
+        -webkit-text-stroke-color: white;
+    }
+    .verticalscrollonimg{
+        top: 700%;
+        right: -90px;
+    }
+
+    
+}
+
+@media (max-width:1080px) {
+    .section-one-container{
+        min-width:auto;
+        max-width: 100vh;
+        min-height:auto;
+    }
+    .section-one-item img{
+        min-height: auto;
+        max-height: 100vh;
+    }
+    .section-item2-container{
+        display: none;
+    }
+ 
+}

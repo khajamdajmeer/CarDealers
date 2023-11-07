@@ -134,3 +134,60 @@ line-height: 28px;
 font-weight: 400;
 font-family: 'Helvetica Neue', sans-serif;
 }
+
+@media (max-width:1028px) {
+    .content-right{
+        font-size: 84px;
+        letter-spacing: -4px;
+        margin-right: 34px;
+    }
+    .content-left{
+        width: 45%;
+        margin-left: 40px;
+    }
+}
+@media (max-width:770px) {
+    .content-right{
+        display: none;
+    }.nav-content{
+        bottom: 30px;
+    }
+    .header-info-container{
+        flex-direction: column;
+        
+    }
+    .info-left, .info-right{
+        width: 80%;
+    }
+    .header-info{
+        padding: 40px 0;
+        height: auto;
+    }
+}
+
+@media (max-width:568px) {
+    .nav-item{
+        display: none;
+    }
+    .nav-menu{
+        margin-top: 20px;
+    }
+    .navlogo{
+        margin-left: 30px;
+    }
+    .navlogo img{
+        height: 45px;
+    }
+    .content-left{
+        width: 50%;
+    }
+    .content-left h2{
+        font-size: 24px;
+    }
+    .header-buttons button {
+        height: auto;
+        width: auto;
+        padding: 10px 24px;
+        margin: 4px 0;
+    }
+}

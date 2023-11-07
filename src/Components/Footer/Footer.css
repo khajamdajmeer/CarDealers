@@ -1,0 +1,130 @@
+.footer-container{
+    width: 100vw;
+    margin-top: 100px;
+}
+.footer-item1{
+    width: unset;
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 0 5%;
+
+}
+.footer-content1{
+    display: flex;
+    width: 400px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.footer-content2{
+    position: relative;
+width: 400px;
+}
+.footer-content2 input{
+    width: 100%;
+    height: 48px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+.footer-content2 input::-webkit-input-placeholder{
+    color: white;
+}
+.footer-content2 button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 40px;
+    transform: translate(0%,-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 400;
+}
+.footer-item2{
+    height: 330px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-content3{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    color: white;
+}
+.footer-content3 h2{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.footer-content3 span{
+    transform: rotate(-45deg);
+    padding: 0 10px;
+    font-size: 24px;
+}
+.footer-content4{
+    width: 80%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+}
+.footer-content4-right img{
+    padding: 0 10px;
+
+}
+.footer-content4-left{
+    display: flex;
+}
+.footer-content4-left span{
+    padding: 0 15px;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.footer-content4-left a{
+    color: white;
+}
+
+@media (max-width:1080px) {
+.footer-item1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-content1{
+    width: auto;
+}
+.footer-content3 h2 {
+    padding: 0 ;
+}
+.footer-content4{
+    flex-flow: wrap;
+}
+.footer-content4-left{
+    flex-flow: wrap;
+}
+.footer-content4-right{
+    flex-flow: wrap;
+}
+    
+}

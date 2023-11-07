@@ -19,8 +19,9 @@ const About = () => {
         <div className="about-item">
             <div className="about-item-content">
                 <h2>About</h2>
-                <span>Vol gas naar je droom auto</span>
-                Auto's zijn mijn ding. Wat startte als een hobby, explodeert nu! Mijn garage staat voller dan ooit en ik voel dat het tijd is om te schakelen. Niet omdat ik deze prachtige machines niet waardeer, maar om ruimte te creëren voor nieuwe krachtpatsers. Ik zet nu de stap om mijn eigen autobedrijf te lanceren, zodat ik vol gas mijn passie kan volgen en tegelijkertijd andere autoliefhebbers een unieke ervaring kan bieden!</div>
+                <span>
+Full throttle to your dream car</span>
+Cars are my thing. What started as a hobby is now exploding! My garage is fuller than ever and I feel it's time to switch gears. Not because I don't appreciate these beautiful machines, but to create space for new powerhouses. I am now taking the step to launch my own car company, so that I can follow my passion full throttle and at the same time offer other car enthusiasts a unique experience!</div>
             <div className="about-item-img" id='about-img' >
                 <img src={aboutimg} alt="" />
             </div>

@@ -7,7 +7,7 @@ body{
 }
 
 body::-webkit-scrollbar{
-  display: none;
+  /* display: none; */
   width: 10px;
 
 }
@@ -21,3 +21,39 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
   background: black;
 }
+
+
+
+.animated-container {
+  width: 100%; /* Set the width to the desired container width */
+  height: 300px; /* Set the height to your desired height */
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth; /* Add smooth scrolling behavior */
+}
+
+.bae-logo,
+.middle-image,
+.bae-logo-duplicate {
+  width: 300px; /* Set the width to the desired element width */
+  height: 200px; /* Set the height to your desired height */
+  margin: 10px;
+  background-color: #3498db; /* Set the background color or customize as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  font-size: 24px;
+  font-weight: bold;
+  transform-origin: 100% 50%;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.middle-image {
+  transform-origin: 0% 50%;
+  transform: scale(0);
+}
+
+/* Style as needed */
