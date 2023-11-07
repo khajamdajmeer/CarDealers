@@ -31,7 +31,7 @@ const ScrollContainerref = useRef(null)
                     start: 'top top',
                     end: `+=${scrollcontainerwidth}`,
                     scrub: 1,
-                    pin: true,markers:true
+                    pin: true,
                   },
                 });
             
