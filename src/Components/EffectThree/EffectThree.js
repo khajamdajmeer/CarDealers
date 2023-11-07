@@ -4,7 +4,6 @@ import img1 from '../../Resources/mc1.png';
 import img2 from '../../Resources/mc2.png';
 import img3 from '../../Resources/mc3.png';
 import img4 from '../../Resources/mc4.png';
-import video from '../../Resources/header.mp4';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -29,15 +28,15 @@ gsap.registerPlugin(ScrollTrigger)
           scrollTrigger: {
             trigger: ScrollContainer,
             start: 'top top',
-            end: `+=${scrollcontainerwidth-30}`,
+            end: `+=${scrollcontainerwidth*2}`,
             scrub: 1,
             pin: true
           },
         });
     
         t1.to(ScrollItem, {
-          x: `-${scrollitemwidth }`,
-          ease: 'none'
+          x: `-${scrollitemwidth}`,
+          ease: 'none',
         });
     
         ScrollTrigger.refresh();
@@ -64,9 +63,7 @@ The whole package.</h2>
             <img src={img2} alt="" />
             <img src={img3} alt="" />
             </div>
-            <video  className='headervideo'  autoPlay loop muted>
-      <source  src={video} type='video/mp4' />
-</video>
+       
             <img src={img4} alt="" />
             <img src={img1} alt="" />
             <img src={img4} alt="" />

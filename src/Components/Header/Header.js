@@ -1,16 +1,18 @@
 import React from 'react';
 import './Header.css';
-import headerbackground from '../../Resources/header.mp4';
-import logo from '../../Resources/logo.png'
+// import headerbackground from '../../Resources/header.mp4';
+import logo from '../../Resources/logo.png';
+import mainimg from '../../Resources/Homepage_Hero_kwb9yy.png'
 const Header = () => {
 
     
   return (
     <>
      <div className="header-Container">
-     <video  className='headervideo'  autoPlay loop muted>
-      <source  src={headerbackground} type='video/mp4' />
-</video>
+     {/* <video  className='headervideo'  autoPlay loop muted>
+      <source  src={mainimg} type='video/mp4' />
+</video> */}
+<img className='headervideo' src={mainimg} alt="" />
 
         <div className="nav-container">
             <div className="nav-menu">

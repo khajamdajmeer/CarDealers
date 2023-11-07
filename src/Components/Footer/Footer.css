@@ -64,6 +64,7 @@ width: 400px;
     justify-content: center;
     padding: 20px 0;
     color: white;
+    flex-flow: wrap;
 }
 .footer-content3 h2{
     display: flex;
@@ -106,6 +107,9 @@ width: 400px;
 }
 
 @media (max-width:1080px) {
+.footer-content4-left span{
+    padding-bottom: 8px;
+}
 .footer-item1{
     flex-direction: column;
     justify-content: center;

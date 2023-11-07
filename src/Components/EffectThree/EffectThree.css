@@ -74,6 +74,7 @@ height: 380px;
     }
     .effect3-img-item{
         height: inherit;
+        width: auto;
     }
     .effect3-img-item img {
      max-height: 100%;   

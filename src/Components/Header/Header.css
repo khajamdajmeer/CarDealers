@@ -187,7 +187,15 @@ font-family: 'Helvetica Neue', sans-serif;
     .header-buttons button {
         height: auto;
         width: auto;
-        padding: 10px 24px;
+        padding: 8px 18px;
         margin: 4px 0;
+    }
+    .info-left{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .info-right{
+        font-size: 16px;
+        line-height: 20px;
     }
 }
