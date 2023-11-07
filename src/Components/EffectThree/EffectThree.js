@@ -31,7 +31,7 @@ console.log(scrollitemwidth,scrollcontainerwidth)
             start: 'top top',
             end: `+=${scrollitemwidth}`,
             scrub: 1,
-            pin: true
+            pin: true,markers:true
           },
         });
     
