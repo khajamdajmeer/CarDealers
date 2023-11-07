@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './EffectThree.css';
 import img1 from '../../Resources/mc1.png';
 import img2 from '../../Resources/mc2.png';
@@ -14,7 +14,7 @@ const EffectThree = () => {
     const ScrollItemref = useRef(null)
 const ScrollContainerref = useRef(null)
 
-    
+    const [contentready,setContentReady]=useState(false);
 
     useEffect(() => {
 gsap.registerPlugin(ScrollTrigger)
@@ -23,6 +23,7 @@ gsap.registerPlugin(ScrollTrigger)
         const ScrollContainer = ScrollContainerref.current;
         const scrollitemwidth = ScrollItem.offsetWidth;
         const scrollcontainerwidth = ScrollContainer.offsetWidth;
+console.log(scrollitemwidth,scrollcontainerwidth)
     
         const t1 = gsap.timeline({
           scrollTrigger: {
@@ -30,12 +31,12 @@ gsap.registerPlugin(ScrollTrigger)
             start: 'top top',
             end: `+=${scrollitemwidth}`,
             scrub: 1,
-            pin: true,markers:true
+            pin: true
           },
         });
     
         t1.to(ScrollItem, {
-          x: `-${scrollitemwidth}`,
+          x: `-${scrollitemwidth-200}`,
           ease: 'none',
         });
     
@@ -44,7 +45,11 @@ gsap.registerPlugin(ScrollTrigger)
         return () => {
           t1.kill();
         };
-      }, []);
+      }, [contentready]);
+
+      useEffect(()=>{
+        setTimeout(()=>{setContentReady(true)},3000);
+      },[])
 
   return (
     <>
