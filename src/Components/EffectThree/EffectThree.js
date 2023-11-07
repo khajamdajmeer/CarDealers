@@ -28,7 +28,7 @@ gsap.registerPlugin(ScrollTrigger)
           scrollTrigger: {
             trigger: ScrollContainer,
             start: 'top top',
-            end: `+=${scrollcontainerwidth*2}`,
+            end: `+=${scrollcontainerwidth}`,
             scrub: 1,
             pin: true
           },
