@@ -69,9 +69,7 @@ height: 380px;
         margin: 0;
         padding:0 10px;
     }
-    .effect3-scroll-container{
-        max-height: 35%;
-    }
+  
     .effect3-img-item{
         height: inherit;
         width: auto;
