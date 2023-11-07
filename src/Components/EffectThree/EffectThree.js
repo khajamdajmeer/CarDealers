@@ -14,7 +14,7 @@ const EffectThree = () => {
     const ScrollItemref = useRef(null)
 const ScrollContainerref = useRef(null)
 
-    const imgwidthref = useRef(null)
+    
 
     useEffect(() => {
 gsap.registerPlugin(ScrollTrigger)
@@ -23,8 +23,7 @@ gsap.registerPlugin(ScrollTrigger)
         const ScrollContainer = ScrollContainerref.current;
         const scrollitemwidth = ScrollItem.offsetWidth;
         const scrollcontainerwidth = ScrollContainer.offsetWidth;
-    const imgitem = imgwidthref.current;
-    const imgitemwidth = imgitem.offsetWidth; 
+    
         const t1 = gsap.timeline({
           scrollTrigger: {
             trigger: ScrollContainer,
@@ -36,7 +35,7 @@ gsap.registerPlugin(ScrollTrigger)
         });
     
         t1.to(ScrollItem, {
-          x: `-${scrollcontainerwidth}`,
+          x: `-${scrollitemwidth}`,
           ease: 'none',
         });
     
@@ -59,7 +58,7 @@ The whole package.</h2>
         <div className="effect3-scroll-container" >
             <div className="effect3-img-item" ref={ScrollItemref}>
 
-            <img src={img1} alt="" ref={imgwidthref}/>
+            <img src={img1} alt="" />
             <div className='effect3-subdiv'>
             <img src={img2} alt="" />
             <img src={img3} alt="" />
