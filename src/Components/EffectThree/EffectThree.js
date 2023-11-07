@@ -29,16 +29,19 @@ const ScrollContainerref = useRef(null)
                   scrollTrigger: {
                     trigger: ScrollContainer,
                     start: 'top top',
-                    end: `+=${scrollitemwidth}`,
+                    end: `+=${scrollcontainerwidth}`,
                     scrub: 1,
-                    pin: true,markers:true,pinSpacing:true
+                    pin: true,markers:true
                   },
                 });
             
-                t1.to(ScrollItem, {
+              const animation =  gsap.to(ScrollItem, {
                   x: `-${scrollitemwidth-200}`,
                   ease: 'none',
                 });
+                ScrollTrigger.create({
+                  trigger:ScrollItem,animation:animation,scrub:1,
+                })
             
                 ScrollTrigger.refresh();
             
